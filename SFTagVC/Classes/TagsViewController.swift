@@ -9,7 +9,7 @@
 import UIKit
 
 public class TagsViewController: UIViewController {
-
+    
     var titleScrollH: CGFloat = 0.0
     var btnSize: CGSize = CGSize(width: 0, height: 0)
     lazy var titleScrollView: UIScrollView = {
@@ -26,19 +26,19 @@ public class TagsViewController: UIViewController {
         contentScrollView.isPagingEnabled = true
         return contentScrollView
     }()
-   lazy var btnArray: [UIButton] = [UIButton]()
-   lazy var vcArray: [UIViewController] = [UIViewController]()
+    lazy var btnArray: [UIButton] = [UIButton]()
+    lazy var vcArray: [UIViewController] = [UIViewController]()
     var selectedHeadButton: UIButton = UIButton(type: .custom)
     var titleA: [String] = [String]()
     let mainWidth = UIScreen.main.bounds.size.width
- public convenience init(titleArray: [String],titleScrollHeight: CGFloat,buttonSize: CGSize) {
+    public convenience init(titleArray: [String],titleScrollHeight: CGFloat,buttonSize: CGSize) {
         self.init()
         titleA = titleArray
         titleScrollH = titleScrollHeight
         btnSize = buttonSize
         
     }
-  public   override func viewDidLoad() {
+    public   override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         addScrollView()
@@ -52,7 +52,7 @@ public class TagsViewController: UIViewController {
         view.addSubview(self.titleScrollView)
         view.addSubview(self.contentScrollView)
         
-
+        
         if(isIphoneX()) {
             self.titleScrollView.frame = CGRect(x: 0, y: 88, width: mainWidth, height: titleScrollH)
         }else{
@@ -121,10 +121,10 @@ public class TagsViewController: UIViewController {
         headButton?.isSelected = true
         
     }
-
-
+    
+    
 }
- extension TagsViewController: UIScrollViewDelegate {
+extension TagsViewController: UIScrollViewDelegate {
     
     
     public   func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
