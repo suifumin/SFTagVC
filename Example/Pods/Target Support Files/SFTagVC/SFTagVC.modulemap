@@ -1,0 +1,6 @@
+framework module SFTagVC {
+  umbrella header "SFTagVC-umbrella.h"
+
+  export *
+  module * { export * }
+}

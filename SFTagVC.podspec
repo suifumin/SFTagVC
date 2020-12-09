@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SFTagVC'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SFTagVC.'
+  s.summary          = '快速创建标签和对应的控制器'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'SFTagVC/Classes/**/*'
-  
+  s.swift_version = '5.0'
   # s.resource_bundles = {
   #   'SFTagVC' => ['SFTagVC/Assets/*.png']
   # }
