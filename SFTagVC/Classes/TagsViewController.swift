@@ -31,7 +31,7 @@ public class TagsViewController: UIViewController {
     var selectedHeadButton: UIButton = UIButton(type: .custom)
     var titleA: [String] = [String]()
     let mainWidth = UIScreen.main.bounds.size.width
-    convenience init(titleArray: [String],titleScrollHeight: CGFloat,buttonSize: CGSize) {
+ public convenience init(titleArray: [String],titleScrollHeight: CGFloat,buttonSize: CGSize) {
         self.init()
         titleA = titleArray
         titleScrollH = titleScrollHeight
