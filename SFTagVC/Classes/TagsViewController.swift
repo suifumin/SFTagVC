@@ -127,11 +127,11 @@ public class TagsViewController: UIViewController {
  extension TagsViewController: UIScrollViewDelegate {
     
     
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    public   func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         self.scrollViewDidEndDecelerating(scrollView)
     }
     
-   func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public  func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let index: Int = Int(scrollView.contentOffset.x / scrollView.bounds.width)
         
         let headButton = self.titleScrollView.subviews[index] as! UIButton
@@ -152,7 +152,7 @@ public class TagsViewController: UIViewController {
         let vc = self.children[index]
         if (vc.view.superview != nil) {return}
         self.contentScrollView.addSubview(vc.view)
-
+        
         vc.view.frame =  CGRect(x: CGFloat(index) * mainWidth, y: 0, width: mainWidth, height: self.contentScrollView.bounds.height)
     }
     
