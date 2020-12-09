@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SFTagVC_Tests' do
+  pod 'SFTagVC', :path => '../'
+  
+  
+end
