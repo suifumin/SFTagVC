@@ -38,7 +38,7 @@ public class TagsViewController: UIViewController {
         btnSize = buttonSize
         
     }
-    override func viewDidLoad() {
+  public   override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         addScrollView()
