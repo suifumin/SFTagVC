@@ -1,6 +1,6 @@
 
 
-```html
+
 # SFTagVC
 [![CI Status](https://img.shields.io/travis/suifumin/SFTagVC.svg?style=flat)](https://travis-ci.org/suifumin/SFTagVC)
 [![Version](https://img.shields.io/cocoapods/v/SFTagVC.svg?style=flat)](https://cocoapods.org/pods/SFTagVC)
@@ -20,8 +20,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SFTagVC'
 ```
-```html
+
 ## use
+```html
 /**
   titleArray:  传入的标题数组
   titleScrollHeight:  标题的高度 
@@ -46,7 +47,7 @@ pod 'SFTagVC'
     vc.clicktitleBtnBlock = { [weak self] (num) in
     print("num == \(num), title == \(vc.btnArray[num].titleLabel?.text)")
 }
-
+```
 ## Author
 
 suifumin, sfmzqbx@sina.com
@@ -54,4 +55,4 @@ suifumin, sfmzqbx@sina.com
 ## License
 
 SFTagVC is available under the MIT license. See the LICENSE file for more info.
-```
+
