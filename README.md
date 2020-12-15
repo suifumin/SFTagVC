@@ -20,6 +20,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SFTagVC'
 ```
+```html
 ## use
 /**
   titleArray:  传入的标题数组
