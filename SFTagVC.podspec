@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFTagVC'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '快速创建标签和对应的控制器'
 
 # This description is used to generate tags and improve search results.
